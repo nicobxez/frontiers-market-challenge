@@ -1,0 +1,45 @@
+.error_wrapper {
+  display: flex;
+  height: calc(100vh - 80px);
+  min-height: 600px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.error_container {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  height: 100%;
+  color: var(--fm-primary-black);
+}
+
+.error_code {
+  font-family: montserrat, sans-serif;
+  font-size: 252px;
+  font-weight: 900;
+  color: var(--fm-primary-black);
+  text-transform: uppercase;
+  letter-spacing: -40px;
+  margin: -40px 0px -40px -40px;
+}
+
+.error_code > span {
+  text-shadow: -8px 0 0 var(--fm-primary-white);
+}
+
+.error_description {
+  text-align: center;
+  width: 72%;
+  color: #57647c;
+}
+
+.error_button {
+  margin-top: 4px;
+  width: max-content;
+  padding: 12px 32px;
+}

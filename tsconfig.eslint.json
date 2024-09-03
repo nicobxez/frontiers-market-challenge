@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["node_modules"],
+  "include": ["src", ".eslintrc.cjs", "jest.config.js"],
+  "compilerOptions": {
+    "types": ["node"],
+    "target": "ES2017",
+    "module": "ESNext",
+    "lib": ["ES2017", "DOM", "DOM.Iterable", "ESNext", "ES6", "ES5"],
+    "noUnusedLocals": true
+  }
+}

@@ -1,0 +1,18 @@
+:root {
+  --fm-main-primary: #119c3c;
+  --fm-main-secondary: #008627;
+  --fm-main-alternative: #344054;
+  --fm-main-alternative-dark: #667085;
+  --fm-primary-black: #101828;
+  --fm-primary-white: #ffffff;
+  --fm-white-background: #fbfafa;
+  --fm-alternative-grey-1: #98a2b3;
+  --facebook-primary: #3b5998;
+  --google-primary: #db4437;
+  --fm-breakpoint-extra-small-mobile: 380px;
+  --fm-breakpoint-small-mobile: 480px;
+  --fm-breakpoint-mobile: 600px;
+  --fm-breakpoint-tablet: 900px;
+  --fm-breakpoint-small-desktop: 1200px;
+  --fm-breakpoint-desktop: 1536px;
+}
