@@ -34,7 +34,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin: 32px auto;
+  margin: 0 auto;
+  padding: 32px;
   overflow-y: auto;
   overflow-x: hidden;
   gap: 48px;
@@ -150,11 +151,11 @@
 }
 
 @media (max-width: 900px) {
-  .login_banner {
+  .login_banner_wrapper {
     display: none;
   }
 
-  .form_wrapper {
+  .form_section {
     width: 100%;
   }
 }

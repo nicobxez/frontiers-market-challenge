@@ -1,6 +1,7 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
+// I expose the credentials instead of using environment variables in order to perform local testing without the need to request those credentials.
 const firebaseConfig = {
   apiKey: 'AIzaSyByQH_r7vk8XgRn7EL2mxaW6Gfb4MXnsHA',
   authDomain: 'frontiers-market-challenge.firebaseapp.com',
