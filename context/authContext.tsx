@@ -1,4 +1,5 @@
-import { useContext, createContext, useState, useEffect, PropsWithChildren } from 'react';
+/* eslint-disable @typescript-eslint/no-empty-function */
+import React, { useContext, createContext, useState, useEffect, PropsWithChildren } from 'react';
 import {
   signInWithPopup,
   signOut,
@@ -7,6 +8,7 @@ import {
   signInWithEmailAndPassword,
   User,
 } from 'firebase/auth';
+
 import { auth } from '../services/firebase';
 import { authContextProvider } from '../constants/console';
 import { isLocalEnvironment } from '../utils/global';

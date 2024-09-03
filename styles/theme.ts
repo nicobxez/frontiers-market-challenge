@@ -23,6 +23,11 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: manrope.style.fontFamily,
+    button: {
+      fontFamily: manrope.style.fontFamily,
+      fontWeight: 700,
+      textTransform: 'none',
+    },
   },
 });
 

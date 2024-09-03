@@ -1,7 +1,15 @@
 {
   "extends": "./tsconfig.json",
   "exclude": ["node_modules"],
-  "include": ["src", ".eslintrc.cjs", "jest.config.js"],
+  "include": [
+    "src",
+    ".eslintrc.cjs",
+    "jest.config.js",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "types/**/*.ts",
+    "types/**/*.tsx"
+  ],
   "compilerOptions": {
     "types": ["node"],
     "target": "ES2017",

@@ -33,9 +33,12 @@ To learn more about this project:
 ## Requirements
 
 Please recreate the homepage [https://frontiersmarket.com/](https://frontiersmarket.com/) on your server (preferably firebase) as a static website and create a chat widget (design it yourself) that will overlay the website.
+
 The chat widget should display the ongoing conversations with the chatbot or a real person. There can be only one ongoing conversation per user. Please use firestore to store the conversations. Chat can be connected to any chatbots api of your choice.
+
 As an extra activity you can design a sign in functionality that will allow users to sign in with their google account based on firebase authentication.
 The website and the chat should be written in typescript.
+
 Features that will be evaluated:
 
 - Website translation

@@ -4,8 +4,9 @@ import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/do
 import { AppProps as NextAppProps } from 'next/app';
 import createEmotionServer from '@emotion/server/create-instance';
 import { EmotionCache } from '@emotion/cache';
-import theme from '../styles/theme';
+
 import createEmotionCache from '../utils/createEmotionCache';
+import theme from '../styles/theme';
 
 export interface MyDocumentProps {
   emotionStyleTags: React.ReactNode[];

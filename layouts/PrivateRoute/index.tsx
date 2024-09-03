@@ -1,7 +1,8 @@
-import { PropsWithChildren, useEffect } from 'react';
+import React, { PropsWithChildren, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { useSnackbar } from 'notistack';
 import { Box, CircularProgress } from '@mui/material';
+
 import { PATH_ROUTES } from '../../constants/routes/routes';
 import { UserAuth } from '../../context/authContext';
 
@@ -21,7 +22,7 @@ const PrivateRoute = ({ isPrivate, children }: IPrivateRoute) => {
         variant: 'warning',
       });
     }
-  }, [user, authLoading]);
+  }, [user, authLoading, isPrivate, router, enqueueSnackbar]);
 
   return isPrivate && authLoading ? (
     <Box

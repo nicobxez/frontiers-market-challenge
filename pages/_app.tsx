@@ -7,14 +7,15 @@ import { CacheProvider } from '@emotion/react';
 import { EmotionCache } from '@emotion/cache';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+
 import DefaultLayout from '../layouts/DefaultLayout';
 import PrivateRoute from '../layouts/PrivateRoute';
-import theme from '../styles/theme';
 import { CUSTOM_ROUTES } from '../constants/routes/routes';
 import { LAYOUT_TYPES } from '../constants/layouts';
 import { COMPANY_NAME } from '../constants/contacts';
 import createEmotionCache from '../utils/createEmotionCache';
 import { AuthContextProvider } from '../context/authContext';
+import theme from '../styles/theme';
 
 import '../styles/vars.css';
 
