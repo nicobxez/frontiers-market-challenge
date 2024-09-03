@@ -3,6 +3,8 @@ import { LAYOUT_TYPES } from '../layouts';
 export const PATH_ROUTES = {
   HOME: '/',
   LOGIN: '/login',
+  REGISTER: '/register',
+  FORGOT_PASSWORD: '/forgot-password',
   CATTLE_FOR_SALE: 'cattle-for-sale',
 };
 

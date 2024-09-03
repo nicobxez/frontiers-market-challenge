@@ -7,6 +7,8 @@ import linkedInIcon from '@mui/icons-material/linkedIn';
 export const COMPANY_NAME = 'Frontiers Market';
 export const EMAIL = 'info@frontiersmarket.com';
 export const PHONE = '+1 512-387-4314';
+export const TERMS_OF_SERVICE = 'https://frontiersmarket.com/terms-of-service';
+export const PRIVACY_POLICY = 'https://frontiersmarket.com/privacy-policy';
 
 export const INSTAGRAM = {
   user: '@frontiersmarket',

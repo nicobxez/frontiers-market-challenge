@@ -2,37 +2,67 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  background-color: var(--fm-white-background);
+}
+
+.login_banner_wrapper {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .login_banner {
-  width: 50%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.form_wrapper {
-  width: 50%;
-  height: 100%;
+.login_banner_overlay {
+  position: absolute;
+  width: 100%;
   padding: 80px;
+  bottom: 0;
+}
+
+.form_section {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 32px;
+  justify-content: space-between;
+  margin: 32px auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  gap: 48px;
+}
+
+.form_wrapper {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: auto 32px;
+}
+
+.logo_link {
+  width: max-content;
 }
 
 .login_title_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   max-width: 480px;
 }
 
 .subtitle_link {
   text-decoration: none;
-  color: var(--fm-alternative-grey-1);
+  color: var(--fm-primary-black);
+  font-weight: 500;
 }
+
 .subtitle_link:hover {
   text-decoration: underline;
 }
@@ -45,31 +75,33 @@
   gap: 20px;
 }
 
+.form_input.MuiInputBase-root {
+  background-color: var(--fm-primary-white);
+  border-radius: 0.5rem;
+}
+
 .forgot_password_text {
-  display: flex;
   width: 100%;
+  display: flex;
   justify-content: flex-end;
   text-align: end;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 500;
   margin-top: 2px;
-  color: var(--fm-main-primary);
   cursor: pointer;
+  color: var(--fm-primary-black);
 }
+
 .forgot_password_text:hover {
   text-decoration: underline;
-  color: var(--fm-main-secondary);
 }
 
-.back_button,
-.back_button > button {
+.form_button,
+.form_button > button {
   width: 100%;
-}
-
-.form_button_container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 10px;
+  height: 60px;
+  border-radius: 0.5rem;
+  font-size: 18px;
 }
 
 .social_network_button {
@@ -86,10 +118,35 @@
   border-color: var(--google-primary);
   color: var(--google-primary);
 }
+
 .google_button:hover {
   background-color: var(--google-primary);
   border-color: var(--google-primary);
   color: white;
+}
+
+.form_footer {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form_footer_divider {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.form_footer_link_container {
+  display: flex;
+  gap: 16px;
+}
+
+.form_footer_link {
+  text-decoration: none;
+  color: var(--fm-alternative-grey-1);
 }
 
 @media (max-width: 900px) {
