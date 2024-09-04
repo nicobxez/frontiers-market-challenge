@@ -10,7 +10,7 @@ import styles from './styles.module.css';
 
 const Hero = () => {
   return (
-    <Box className={styles.wrapper}>
+    <section className={styles.wrapper}>
       <Image
         className={styles.hero_banner}
         src={HeroBanner}
@@ -35,7 +35,7 @@ const Hero = () => {
           </Button>
         </Link>
       </Box>
-    </Box>
+    </section>
   );
 };
 

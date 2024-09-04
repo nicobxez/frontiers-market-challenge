@@ -1,0 +1,67 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq_list_button_wrapper {
+  width: max-content;
+  display: flex;
+  gap: 8px;
+  padding: 4px;
+  border-radius: 1.5rem;
+  border: 1px solid var(--fm-alternative-grey-2);
+  margin: 32px 0;
+}
+
+.faq_list_button {
+  box-shadow: none;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 1.5rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.faq_list_button:hover {
+  box-shadow: none;
+  background-color: var(--fm-main-primary);
+  color: var(--fm-primary-white);
+}
+
+.faq_list_button_unselected,
+.faq_list_button_unselected:hover {
+  box-shadow: none;
+  background-color: var(--fm-white-background);
+  color: var(--fm-primary-black);
+}
+
+.faq_list_wrapper {
+  width: 100%;
+  max-width: 1080px;
+}
+
+.faq_list_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.faq_list_item_text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.faq_list_item_image,
+.faq_list_item_image > img {
+  width: 360px;
+  height: 324px;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+}
