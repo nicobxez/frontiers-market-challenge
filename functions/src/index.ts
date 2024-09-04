@@ -18,7 +18,7 @@ export const createChatBotMessage = functions.https.onCall(async (data, context)
     );
   }
 
-  const userRef = db.collection('users').doc(uid);
+  const userRef = db.collection('users').doc(uid || 'uO4umSZvrmc5ff2SbxFD');
   const discussionRef = userRef.collection('discussions').doc(discussionId);
   const messageRef = discussionRef.collection('messages').doc(messageId);
 
