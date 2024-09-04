@@ -6,6 +6,7 @@ with [TypeScript](https://www.typescriptlang.org/), [Firebase](https://firebase.
 
 ### Key Features
 
+- **CI/CD with GitHub Actions**: The project is configured with CI/CD pipelines using GitHub Actions for automated deployments to **Firebase Hosting**.
 - **Google Sign-In**: Users can sign in using their Google account. This feature is implemented and ready to use.
 - **Email Sign-In**: Users can sign in using their email and password. Note: Currently, no authorized email accounts are available for testing.
 - **Dynamic Views**: Sections of the website dynamically update based on user interactions and login status.
@@ -18,7 +19,7 @@ with [TypeScript](https://www.typescriptlang.org/), [Firebase](https://firebase.
 
 ## How to use it
 
-You can clone the repository [or visit the website](https://frontiers-market-challenge.vercel.app/):
+You can clone the repository [or visit the website](https://frontiers-market-challenge.web.app/):
 
 Install the dependencies and start the local server:
 
