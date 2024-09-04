@@ -49,15 +49,11 @@ const useChatBotMessages = (
     setSendLoading(true);
 
     try {
-      const result = await createChatBotMessage({
+      await createChatBotMessage({
         discussionId: 'aOPTFiUwMicVLZElzzbV',
         messageId: doc(collection(firestore, 'temp')).id,
         prompt: newMessage,
       });
-
-      if (result?.data?.success) {
-        console.log(result?.data);
-      }
     } catch (error) {
       const errorMessage = (error as { message: string }).message;
       console.error('Error sending message:', errorMessage);
