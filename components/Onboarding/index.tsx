@@ -19,7 +19,7 @@ const Onboarding = () => {
       <Image
         className={styles.onboarding_banner}
         src={USCountry}
-        alt="login-banner"
+        alt="onboarding-banner"
         decoding="async"
         sizes="100%"
         priority

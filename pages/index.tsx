@@ -7,6 +7,7 @@ import FAQs from '../components/FAQs';
 import CattleBrowser from '../components/CattleBrowser';
 import Onboarding from '../components/Onboarding';
 import AboutUs from '../components/AboutUs';
+import AppDownloadBanner from '../components/AppDownloadBanner';
 import Logo from '../assets/img/logo.png';
 import styles from '../styles/index.module.css';
 
@@ -19,6 +20,7 @@ const Home = () => {
       <Onboarding />
       <AboutUs />
       <Image src={Logo} width={100} height={54} alt="logo" priority decoding="async" />
+      <AppDownloadBanner />
     </Box>
   );
 };
