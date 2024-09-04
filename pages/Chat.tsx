@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
-import { firestore } from '../services/firebase';
-import { collection, query, orderBy } from 'firebase/firestore';
+import { collection, query, orderBy, doc } from 'firebase/firestore';
+import { httpsCallable } from 'firebase/functions';
 import { useCollection } from 'react-firebase-hooks/firestore';
 
+import { firestore, functions } from '../services/firebase';
+import { UserAuth } from '../context/authContext';
+
 const ChatBot = () => {
+  const { user } = UserAuth();
+
   const [message, setMessage] = useState('');
+  const [update, setUpdate] = useState(false);
 
   const messagesRef = collection(
     firestore,
     'users',
-    'uO4umSZvrmc5ff2SbxFD',
+    user?.uid || 'uO4umSZvrmc5ff2SbxFD',
     'discussions',
     'aOPTFiUwMicVLZElzzbV',
     'messages',
@@ -19,9 +25,36 @@ const ChatBot = () => {
 
   const [messagesSnapshot, loading] = useCollection(messagesQuery);
 
-  if (!loading) {
-    messagesSnapshot?.docs.map((doc) => console.log(doc.data()));
-  }
+  const sendMessage = async () => {
+    const newMessage = message.trim();
+    if (!newMessage) return;
+
+    const createChatBotMessage = httpsCallable<
+      {
+        discussionId: string;
+        messageId: string;
+        prompt: string;
+      },
+      { success: boolean; message: string }
+    >(functions, 'createChatBotMessage');
+    try {
+      const result = await createChatBotMessage({
+        discussionId: 'aOPTFiUwMicVLZElzzbV',
+        messageId: doc(collection(firestore, 'temp')).id,
+        prompt: newMessage,
+      });
+
+      if (result?.data?.success) {
+        setMessage('');
+        console.log(result?.data);
+      }
+    } catch (error) {
+      const errorMessage = (error as { message: string }).message;
+      console.error('Error sending message:', errorMessage);
+    } finally {
+      setUpdate(false);
+    }
+  };
 
   return (
     <div>
@@ -39,7 +72,9 @@ const ChatBot = () => {
           })}
       </div>
       <input type="text" value={message} onChange={(e) => setMessage(e.target.value)} />
-      {/* <button onClick={sendMessage}>Send</button> */}
+      <button onClick={sendMessage} disabled={update}>
+        Send
+      </button>
     </div>
   );
 };

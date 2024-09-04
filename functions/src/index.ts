@@ -7,7 +7,7 @@ const db = admin.firestore();
 
 export const createChatBotMessage = functions.https.onCall(async (data, context) => {
   const { uid } = context?.auth || {};
-  const { discussionId, messageId, message } = data || {};
+  const { discussionId, messageId, prompt } = data || {};
 
   const user = JSON.parse(JSON.stringify(context?.auth || {}));
 
@@ -31,15 +31,16 @@ export const createChatBotMessage = functions.https.onCall(async (data, context)
   if (!discussionDoc?.exists) {
     await discussionRef.set({
       uid: discussionId,
-      title: message,
+      title: prompt,
     });
   }
 
   const messageData = {
-    prompt: message,
+    prompt,
+    uid: messageId,
   };
 
-  if (message?.length > 0) {
+  if (prompt?.length > 0) {
     await messageRef.set(messageData);
     return { success: true, data: messageData };
   } else {
