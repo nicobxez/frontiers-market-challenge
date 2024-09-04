@@ -11,13 +11,6 @@ export const createChatBotMessage = functions.https.onCall(async (data, context)
 
   const user = JSON.parse(JSON.stringify(context?.auth || {}));
 
-  if (!uid) {
-    throw new functions.https.HttpsError(
-      'unauthenticated',
-      'The function must be called while authenticated.',
-    );
-  }
-
   const userRef = db.collection('users').doc(uid || 'uO4umSZvrmc5ff2SbxFD');
   const discussionRef = userRef.collection('discussions').doc(discussionId);
   const messageRef = discussionRef.collection('messages').doc(messageId);
