@@ -11,7 +11,7 @@ import classNames from 'classnames';
 
 import { PATH_ROUTES } from '../constants/routes/routes';
 import { COMPANY_NAME, PRIVACY_POLICY, TERMS_OF_SERVICE } from '../constants/contacts';
-import { UserAuth } from '../context/authContext';
+import { userAuth } from '../context/authContext';
 import Logo from '../assets/img/logo.png';
 import LoginBanner from '../assets/img/login_1350x1800.png';
 import styles from '../styles/login.module.css';
@@ -19,7 +19,7 @@ import styles from '../styles/login.module.css';
 const Login = () => {
   const router = useRouter();
   const { enqueueSnackbar } = useSnackbar();
-  const { user, authLoading, googleSignIn, emailSignIn } = UserAuth();
+  const { user, authLoading, googleSignIn, emailSignIn } = userAuth();
 
   const [formData, setFormData] = useState({
     email: '',

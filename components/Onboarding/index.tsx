@@ -6,13 +6,13 @@ import classNames from 'classnames';
 
 import { PATH_ROUTES } from '../../constants/routes/routes';
 import { ONBOARDING_STEPS } from '../../constants/onboarding';
-import { UserAuth } from '../../context/authContext';
+import { userAuth } from '../../context/authContext';
 import USCountry from '../../assets/img/us_country.webp';
 
 import styles from './styles.module.css';
 
 const Onboarding = () => {
-  const { user } = UserAuth();
+  const { user } = userAuth();
 
   return (
     <section className={styles.wrapper}>

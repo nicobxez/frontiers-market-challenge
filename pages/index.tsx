@@ -10,6 +10,7 @@ import AboutUs from '../components/AboutUs';
 import AppDownloadBanner from '../components/AppDownloadBanner';
 import Logo from '../assets/img/logo.png';
 import styles from '../styles/index.module.css';
+import ChatBot from '../components/ChatBot';
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <AboutUs />
       <Image src={Logo} width={100} height={54} alt="logo" priority decoding="async" />
       <AppDownloadBanner />
+      <ChatBot />
     </Box>
   );
 };

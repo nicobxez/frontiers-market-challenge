@@ -93,7 +93,7 @@ export const AuthContextProvider: React.FC<PropsWithChildren> = ({ children }) =
   );
 };
 
-export const UserAuth = () => {
+export const userAuth = () => {
   const context = useContext(AuthContext);
 
   if (!context) {

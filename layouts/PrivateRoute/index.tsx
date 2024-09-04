@@ -4,7 +4,7 @@ import { useSnackbar } from 'notistack';
 import { Box, CircularProgress } from '@mui/material';
 
 import { PATH_ROUTES } from '../../constants/routes/routes';
-import { UserAuth } from '../../context/authContext';
+import { userAuth } from '../../context/authContext';
 
 interface IPrivateRoute extends PropsWithChildren {
   isPrivate?: boolean;
@@ -13,7 +13,7 @@ interface IPrivateRoute extends PropsWithChildren {
 const PrivateRoute = ({ isPrivate, children }: IPrivateRoute) => {
   const router = useRouter();
   const { enqueueSnackbar } = useSnackbar();
-  const { user, authLoading } = UserAuth();
+  const { user, authLoading } = userAuth();
 
   useEffect(() => {
     if (isPrivate && !authLoading && !user) {

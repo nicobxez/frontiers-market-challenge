@@ -16,13 +16,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 import classNames from 'classnames';
 
 import { ACCOUNT_MENU_ITEMS } from '../../constants/header/navbar';
-import { UserAuth } from '../../context/authContext';
+import { userAuth } from '../../context/authContext';
 
 import styles from './styles.module.css';
 
 const MyAccountButton = () => {
   const { enqueueSnackbar } = useSnackbar();
-  const { user, logOut } = UserAuth();
+  const { user, logOut } = userAuth();
 
   const [anchorElAccount, setAnchorElAccount] = useState<HTMLButtonElement | null>(null);
 

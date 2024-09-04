@@ -11,7 +11,7 @@ import classNames from 'classnames';
 import Drawer from '../Drawer';
 import { PATH_ROUTES } from '../../constants/routes/routes';
 import { PHONE } from '../../constants/contacts';
-import { UserAuth } from '../../context/authContext';
+import { userAuth } from '../../context/authContext';
 import Logo from '../../assets/img/logo.png';
 import LogoSmall from '../../assets/img/logo_small.png';
 import globalStyles from '../../styles/global.module.css';
@@ -22,7 +22,7 @@ import NotificationsButton from './NotificationsButton';
 import styles from './styles.module.css';
 
 const Header = () => {
-  const { user, authLoading } = UserAuth();
+  const { user, authLoading } = userAuth();
 
   const [showDrawer, setShowDrawer] = useState(false);
 

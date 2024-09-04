@@ -6,13 +6,14 @@ with [TypeScript](https://www.typescriptlang.org/), [Firebase](https://firebase.
 
 ### Key Features
 
-- **CI/CD with GitHub Actions**: The project is configured with CI/CD pipelines using GitHub Actions for automated deployments to **Firebase Hosting**.
+- **ChatBot**: A ChatBot is configured using [PaLM API](https://extensions.dev/extensions/googlecloud/firestore-palm-chatbot), integrated with Firebase Functions and Firestore. It stores recent chats in order of the most recent date and filters the chat by user.
 - **Google Sign-In**: Users can sign in using their Google account. This feature is implemented and ready to use.
 - **Email Sign-In**: Users can sign in using their email and password. Note: Currently, no authorized email accounts are available for testing.
 - **Dynamic Views**: Sections of the website dynamically update based on user interactions and login status.
-- **Responsive Design**: The application is fully responsive and adapts seamlessly to any device, providing an optimal user experience on desktops, tablets, and mobile phones.
 - **Faithful Recreation**: The **Login** and **Home** pages are recreated as faithfully as possible to the official [Frontiers website](https://frontiersmarket.com/).
+- **Responsive Design**: The application is fully responsive and adapts seamlessly to any device, providing an optimal user experience on desktops, tablets, and mobile phones.
 - **Custom 404 Page**: A personalized 404 error page is displayed when users navigate to a non-existent route.
+- **CI/CD with GitHub Actions**: The project is configured with CI/CD pipelines using GitHub Actions for automated deployments to **Firebase Hosting**.
 - **Private Routes**: The feature for private routes is implemented and configured, although it is not yet utilized.
 
 ---
@@ -41,6 +42,7 @@ To learn more about this project:
 - [Firebase](https://firebase.google.com/)
 - [Material UI](https://mui.com/material-ui/getting-started/)
 - [Jest](https://jestjs.io/)
+- [Chatbot with PaLM API](https://extensions.dev/extensions/googlecloud/firestore-palm-chatbot)
 
 ---
 

@@ -18,7 +18,7 @@ import classNames from 'classnames';
 
 import { PRIVATE_NAVBAR_ITEMS, PUBLIC_NAVBAR_ITEMS } from '../../constants/header/navbar';
 import { PATH_ROUTES } from '../../constants/routes/routes';
-import { UserAuth } from '../../context/authContext';
+import { userAuth } from '../../context/authContext';
 import LogoSmall from '../../assets/img/logo_small.png';
 import headerStyles from '../Header/styles.module.css';
 
@@ -31,7 +31,7 @@ interface IDrawer {
 
 const Drawer: React.FC<IDrawer> = ({ showDrawer, setShowDrawer }) => {
   const { enqueueSnackbar } = useSnackbar();
-  const { user, logOut } = UserAuth();
+  const { user, logOut } = userAuth();
 
   const navbarItems = user
     ? [...PUBLIC_NAVBAR_ITEMS, ...PRIVATE_NAVBAR_ITEMS]
