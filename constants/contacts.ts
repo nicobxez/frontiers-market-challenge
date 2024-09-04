@@ -1,6 +1,6 @@
 import InstagramIcon from '@mui/icons-material/Instagram';
-import facebookIcon from '@mui/icons-material/facebook';
-import linkedInIcon from '@mui/icons-material/linkedIn';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export const COMPANY_NAME = 'Frontiers Market';
 export const EMAIL = 'info@frontiersmarket.com';
@@ -24,13 +24,13 @@ export const INSTAGRAM: socialNetworkProps = {
 export const FACEBOOK: socialNetworkProps = {
   user: 'FrontiersMarket',
   link: 'https://www.facebook.com/FrontiersMarket',
-  icon: facebookIcon,
+  icon: FacebookIcon,
 };
 
 export const LINKED_IN: socialNetworkProps = {
   user: 'frontiersmarket',
   link: 'https://www.linkedin.com/company/frontiersmarket',
-  icon: linkedInIcon,
+  icon: LinkedInIcon,
 };
 
 export const SOCIAL_NETWORKS = [FACEBOOK, INSTAGRAM, LINKED_IN];
