@@ -121,7 +121,7 @@
 
 @media (max-width: 1256px) {
   .banner_text_container {
-    margin-right: 32px;
+    margin-right: 32px !important;
   }
 }
 

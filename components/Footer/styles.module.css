@@ -44,6 +44,10 @@
     align-items: flex-start;
   }
 
+  .contact {
+    font-size: 20px;
+  }
+
   .utils_container {
     flex-direction: column;
     justify-content: flex-start;

@@ -32,6 +32,7 @@ const Footer = () => {
 
           <Link href={`mailto:${EMAIL}`} className={styles.utils_link}>
             <Typography
+              className={styles.contact}
               variant="h5"
               component="p"
               color="var(--fm-primary-black) !important"
@@ -43,6 +44,7 @@ const Footer = () => {
 
           <Link href={`tel:${PHONE}`} className={styles.utils_link}>
             <Typography
+              className={styles.contact}
               variant="h5"
               component="p"
               color="var(--fm-primary-black) !important"

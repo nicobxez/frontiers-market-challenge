@@ -54,7 +54,7 @@ const Banner = () => {
     <Box className={styles.banner} sx={{ mt: showBanner ? 0 : -6 }}>
       <Link
         href={PATH_ROUTES.MOBILE_APP}
-        className={classNames(styles.banner_text_container, globalStyles.document_margin)}
+        className={classNames(globalStyles.document_margin, styles.banner_text_container)}
       >
         <Typography
           variant="body1"
@@ -78,7 +78,7 @@ const Banner = () => {
           variant="body1"
           component="p"
           display="flex"
-          sx={{ verticalAlign: 'center', gap: 0.5 }}
+          sx={{ verticalAlign: 'center', gap: 0.5, textAlign: 'end' }}
           className={styles.banner_text_description}
         >
           Available on
