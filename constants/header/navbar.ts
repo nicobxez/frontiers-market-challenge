@@ -5,10 +5,12 @@ import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlin
 
 import { PATH_ROUTES } from '../routes/routes';
 
-export const PUBLIC_NAVBAR_ITEMS: {
+type NavbarItemsProps = {
   label: string;
   link?: (typeof PATH_ROUTES)[keyof typeof PATH_ROUTES];
-}[] = [
+};
+
+export const PUBLIC_NAVBAR_ITEMS: NavbarItemsProps[] = [
   {
     label: 'Homepage',
     link: PATH_ROUTES.HOME,
@@ -23,29 +25,26 @@ export const PUBLIC_NAVBAR_ITEMS: {
   },
 ];
 
-export const PRIVATE_NAVBAR_ITEMS: {
-  label: string;
-  link?: (typeof PATH_ROUTES)[keyof typeof PATH_ROUTES];
-}[] = [
+export const PRIVATE_NAVBAR_ITEMS: NavbarItemsProps[] = [
   {
     label: 'Dashboard',
-    link: PATH_ROUTES.HOME,
+    link: PATH_ROUTES.DASHBOARD,
   },
   {
     label: 'Account',
-    link: PATH_ROUTES.CATTLE_FOR_SALE,
+    link: PATH_ROUTES.ACCOUNT,
   },
   {
     label: 'Messages',
-    link: PATH_ROUTES.DASHBOARD,
+    link: PATH_ROUTES.MESSAGES,
   },
   {
     label: 'Bookmarks',
-    link: PATH_ROUTES.DASHBOARD,
+    link: PATH_ROUTES.BOOKMARKS,
   },
   {
     label: 'Update password',
-    link: PATH_ROUTES.DASHBOARD,
+    link: PATH_ROUTES.FORGOT_PASSWORD,
   },
 ];
 

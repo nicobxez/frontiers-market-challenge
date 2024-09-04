@@ -8,6 +8,9 @@ export const PATH_ROUTES = {
   CATTLE_FOR_SALE: '/cattle-for-sale',
   MOBILE_APP: '/mobile-app',
   DASHBOARD: '/dashboard',
+  ACCOUNT: '/account',
+  MESSAGES: '/messages',
+  BOOKMARKS: '/bookmarks',
 };
 
 export const CUSTOM_ROUTES = [

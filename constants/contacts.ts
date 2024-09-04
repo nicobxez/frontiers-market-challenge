@@ -1,5 +1,3 @@
-import EmailIcon from '@mui/icons-material/Email';
-import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import facebookIcon from '@mui/icons-material/facebook';
 import linkedInIcon from '@mui/icons-material/linkedIn';
@@ -10,43 +8,28 @@ export const PHONE = '+1 512-387-4314';
 export const TERMS_OF_SERVICE = 'https://frontiersmarket.com/terms-of-service';
 export const PRIVACY_POLICY = 'https://frontiersmarket.com/privacy-policy';
 
-export const INSTAGRAM = {
+type socialNetworkProps = {
+  user: string;
+  link: string;
+  icon: React.ElementType;
+};
+
+export const INSTAGRAM: socialNetworkProps = {
   user: '@frontiersmarket',
   link: 'https://www.instagram.com/frontiersmarket/',
+  icon: InstagramIcon,
 };
 
-export const FACEBOOK = {
+export const FACEBOOK: socialNetworkProps = {
   user: 'FrontiersMarket',
   link: 'https://www.facebook.com/FrontiersMarket',
+  icon: facebookIcon,
 };
 
-export const LINKED_IN = {
+export const LINKED_IN: socialNetworkProps = {
   user: 'frontiersmarket',
   link: 'https://www.linkedin.com/company/frontiersmarket',
+  icon: linkedInIcon,
 };
 
-export const CONTACT_LIST = [
-  {
-    label: EMAIL,
-    icon: EmailIcon,
-  },
-  {
-    label: PHONE,
-    icon: PhoneInTalkIcon,
-  },
-  {
-    label: INSTAGRAM.user,
-    icon: InstagramIcon,
-    link: INSTAGRAM.link,
-  },
-  {
-    label: FACEBOOK.user,
-    icon: facebookIcon,
-    link: FACEBOOK.link,
-  },
-  {
-    label: LINKED_IN.user,
-    icon: linkedInIcon,
-    link: LINKED_IN.link,
-  },
-];
+export const SOCIAL_NETWORKS = [FACEBOOK, INSTAGRAM, LINKED_IN];
