@@ -1,0 +1,35 @@
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.search_form {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.search_select {
+  min-width: 148px;
+  border-radius: 0;
+}
+
+.search_button {
+  box-shadow: none;
+  min-width: 108px;
+  height: 56px;
+  padding: 12px;
+  border-radius: 0 0.38rem 0.38rem 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .search_select {
+    display: none;
+  }
+}
