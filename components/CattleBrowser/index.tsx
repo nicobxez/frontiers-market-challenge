@@ -19,7 +19,7 @@ const CattleBrowser = () => {
         Verified listings added daily
       </Typography>
 
-      <Typography variant="h4" component="h2" fontWeight={700} className={styles.title}>
+      <Typography variant="h4" component="h2" fontWeight={700}>
         Thousands of Cattle to Browse
       </Typography>
 

@@ -4,6 +4,7 @@ import { Box } from '@mui/material';
 import Hero from '../components/Hero';
 import FAQs from '../components/FAQs';
 import CattleBrowser from '../components/CattleBrowser';
+import Onboarding from '../components/Onboarding';
 import styles from '../styles/index.module.css';
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero />
       <FAQs />
       <CattleBrowser />
+      <Onboarding />
     </Box>
   );
 };
