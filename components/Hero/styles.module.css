@@ -47,6 +47,8 @@
   .wrapper,
   .hero_banner {
     height: 260px;
+    width: calc(100% + 32px);
+    margin-left: -16px;
   }
 
   .title {

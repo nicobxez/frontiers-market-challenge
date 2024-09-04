@@ -3,10 +3,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .faq_list_button_wrapper {
   width: max-content;
+  max-width: 100%;
   display: flex;
   gap: 8px;
   padding: 4px;
@@ -17,10 +19,9 @@
 
 .faq_list_button {
   box-shadow: none;
-  height: 40px;
   padding: 8px 16px;
   border-radius: 1.5rem;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -64,4 +65,16 @@
 }
 
 @media (max-width: 900px) {
+  .faq_list_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .faq_list_item_text {
+    width: 100%;
+    text-align: center;
+  }
 }
