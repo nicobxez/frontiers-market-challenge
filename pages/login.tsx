@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useSnackbar } from 'notistack';
-import { Button, Divider, TextField, Typography } from '@mui/material';
+import { Box, Button, Divider, TextField, Typography } from '@mui/material';
 import GoogleIcon from '@mui/icons-material/Google';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import CallMadeIcon from '@mui/icons-material/CallMade';
@@ -60,14 +60,14 @@ const Login = () => {
   }, [router, user]);
 
   return (
-    <div className={styles.login_wrapper}>
+    <Box className={styles.login_wrapper}>
       <section className={styles.form_section}>
-        <div className={styles.form_wrapper}>
+        <Box className={styles.form_wrapper}>
           <Link href={PATH_ROUTES.HOME} className={styles.logo_link}>
             <Image src={Logo} width={105} height={56} alt="logo" decoding="async" loading="lazy" />
           </Link>
 
-          <div className={styles.login_title_container}>
+          <Box className={styles.login_title_container}>
             <Typography variant="h4" component="h1" fontWeight={600}>
               Welcome back
             </Typography>
@@ -78,7 +78,7 @@ const Login = () => {
                 Register now <CallMadeIcon sx={{ fontSize: 14, verticalAlign: 'middle' }} />
               </Link>
             </Typography>
-          </div>
+          </Box>
 
           <form className={styles.form_container} onSubmit={(e) => handleEmailSignIn(e)}>
             <TextField
@@ -163,12 +163,12 @@ const Login = () => {
               Continue with Google
             </Button>
           </form>
-        </div>
+        </Box>
 
-        <div className={styles.form_footer}>
+        <Box className={styles.form_footer}>
           <Divider className={styles.form_footer_divider} />
 
-          <div className={styles.form_footer_link_container}>
+          <Box className={styles.form_footer_link_container}>
             <Link href={TERMS_OF_SERVICE} className={styles.form_footer_link}>
               <Typography variant="subtitle2" component="p">
                 Terms of Service
@@ -180,12 +180,12 @@ const Login = () => {
                 Privacy Policy
               </Typography>
             </Link>
-          </div>
+          </Box>
 
           <Typography variant="subtitle2" component="p" color="var(--fm-alternative-grey-1)">
             {`Copyright © ${COMPANY_NAME} ${new Date().getFullYear()}. All Rights Reserved.`}
           </Typography>
-        </div>
+        </Box>
       </section>
 
       <section className={styles.login_banner_wrapper}>
@@ -234,7 +234,7 @@ const Login = () => {
           </Typography>
         </article>
       </section>
-    </div>
+    </Box>
   );
 };
 

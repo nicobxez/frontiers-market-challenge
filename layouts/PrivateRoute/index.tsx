@@ -18,7 +18,7 @@ const PrivateRoute = ({ isPrivate, children }: IPrivateRoute) => {
   useEffect(() => {
     if (isPrivate && !authLoading && !user) {
       router.push(PATH_ROUTES.HOME);
-      enqueueSnackbar('Debes iniciar sesión para acceder a esta ruta', {
+      enqueueSnackbar('You must log in to access this route', {
         variant: 'warning',
       });
     }
@@ -34,7 +34,10 @@ const PrivateRoute = ({ isPrivate, children }: IPrivateRoute) => {
         height: '100vh',
       }}
     >
-      <CircularProgress sx={{ width: '64px !important', height: '64px !important' }} />
+      <CircularProgress
+        color="primary"
+        sx={{ width: '64px !important', height: '64px !important' }}
+      />
     </Box>
   ) : (
     children

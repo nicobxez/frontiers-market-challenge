@@ -7,8 +7,12 @@
   --fm-primary-white: #ffffff;
   --fm-white-background: #fbfafa;
   --fm-alternative-grey-1: #98a2b3;
+  --fm-alternative-grey-2: #e4e7ec;
+  --fm-alternative-grey-3: #f6fef8;
+  --fm-alternative-green-1: #c0e7c0;
   --facebook-primary: #3b5998;
   --google-primary: #db4437;
+  --android-primary: #8bc34a;
   --fm-breakpoint-extra-small-mobile: 380px;
   --fm-breakpoint-small-mobile: 480px;
   --fm-breakpoint-mobile: 600px;

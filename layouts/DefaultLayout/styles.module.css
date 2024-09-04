@@ -1,9 +1,8 @@
 .layout_container {
-	display: flex;
-	flex-direction: column;
-	width: 84%;
-	max-width: 1920px;
-	align-items: center;
-	min-width: 84%;
-	margin-bottom: 80px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 64px;
 }

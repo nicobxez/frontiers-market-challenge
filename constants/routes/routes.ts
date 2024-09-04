@@ -5,7 +5,9 @@ export const PATH_ROUTES = {
   LOGIN: '/login',
   REGISTER: '/register',
   FORGOT_PASSWORD: '/forgot-password',
-  CATTLE_FOR_SALE: 'cattle-for-sale',
+  CATTLE_FOR_SALE: '/cattle-for-sale',
+  MOBILE_APP: '/mobile-app',
+  DASHBOARD: '/dashboard',
 };
 
 export const CUSTOM_ROUTES = [

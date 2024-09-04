@@ -20,6 +20,9 @@ const theme = createTheme({
     error: {
       main: red.A400,
     },
+    background: {
+      default: '#fbfafa',
+    },
   },
   typography: {
     fontFamily: manrope.style.fontFamily,

@@ -25,7 +25,11 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: ['./tsconfig.json', '<tsconfigRootDir>/tsconfig.eslint.json'],
+    project: [
+      './tsconfig.json',
+      './tsconfig.eslint.json',
+      '<tsconfigRootDir>/tsconfig.eslint.json',
+    ],
   },
   settings: {
     react: {

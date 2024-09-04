@@ -11,9 +11,9 @@ const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Header />
-      <div className={classNames(styles.layout_container, globalStyles.document_margin)}>
+      <main className={classNames(styles.layout_container, globalStyles.document_margin)}>
         {children}
-      </div>
+      </main>
       <Footer />
     </>
   );

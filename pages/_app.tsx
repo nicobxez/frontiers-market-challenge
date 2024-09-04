@@ -61,7 +61,7 @@ const MyApp = ({
           <SnackbarProvider
             maxSnack={3}
             autoHideDuration={4000}
-            anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+            anchorOrigin={{ vertical: 'top', horizontal: 'left' }}
           >
             <PrivateRoute isPrivate={customRoute?.private}>
               <CustomLayout />
