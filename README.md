@@ -1,4 +1,5 @@
 # Frontiers Market Challenge ([Nicolas Baez](https://github.com/nicobxez))
+## Project removed from Firebase to avoid costs!
 
 This is a project initialized with [Next.js](https://nextjs.org/docs)
 using [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
